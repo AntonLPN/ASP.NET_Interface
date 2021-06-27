@@ -1,0 +1,27 @@
+﻿@using Lab2.Models
+@model List<string>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BooksV</title>
+</head>
+<body>
+    <h1>Task2</h1>
+    <div> 
+        <table>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
